@@ -1,0 +1,89 @@
+<!--
+    <table>
+    
+    prós
+        - visualização de dados via linhas e colunas.
+        - boa acessibilidade para leitura de dados
+
+    contras
+        - pouco flexível
+        precisa de estilização para melhor visualização
+
+    não usar
+        - para criar o seu layout
+-->
+
+<table>
+<caption>Pessoas por idade
+    <thead>
+        <tr>
+            <th>nome</th>
+            <th>idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>mayk</th>
+            <th>35</th>
+        </tr>
+        <tr>
+            <th>diego</th>
+            <th>25</th>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>total:</th>
+            <th>2 pessoas</th>
+        </tr>
+    </tfoot>
+</caption>
+</table>
+
+<!--
+    2 lojas
+        quantos produtos foram produzidos, quantos
+        vendidos e agrupados por nome dos produtos
+-->
+
+<br><br><br>
+
+<table>
+    <caption>Produzidos x Vendidos por Loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red">
+        <col span="2" style="background-color: blue;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">afonso Pena</th>
+            <th colspan="2" scope="colgroup">antônia Pereira</th>
+        </tr>
+        <tr>
+            <th scope="col">produzidos</th>
+            <th scope="col">vendidos</th>
+            <th scope="col">produzidos</th>
+            <th scope="col">vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
