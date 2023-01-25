@@ -1,0 +1,76 @@
+/* 
+introdução
+
+o que significa CSS? 
+- cascaging style sheet
+- código para criar estilos no HTML
+- HTML é a estrutura, e o CSS é a estilização
+- não é uma linguaguem de programação
+- é uma linguagem style sheet
+*/
+
+*{
+    margin: 0;
+    color: green;
+}
+
+#container{
+    width: 200px;
+}
+
+.m-40{
+    margin: 40px;
+}
+
+h1,h2{
+    color: red !important;
+    /* font-size: 60px; */
+    background: gray;
+    border: 1px solid red;
+    margin: 200px;
+    padding: 60px;
+}
+
+/* quase todas as caixas do CSS possuem posicionamentos, tamanhos, espaçamentos, bordas
+cores. Caixa pode ficar ao lado uma da outra, ou acima. Elementos HTML são caixas */
+
+h1{
+    color: blue;
+}
+
+.title{
+    color: yellow;
+}
+
+#title-page{
+    color: rgb(95, 33, 175);
+}
+
+.title#title-page{
+    color: blue;
+}
+
+/* shorthand */
+
+*{
+    background-color: rgb(43, 98, 161);
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    /* == */
+    background: rgb(43, 98, 161) url(images/bg.gif) no-repeat left top;
+
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+    /* == */ 
+    font: bold italic .8em/1.2 Arial, sans-serif
+
+    /*adaptar em browsers
+
+    https://caniuse.com
+
+    */
+}
