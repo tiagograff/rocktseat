@@ -151,3 +151,101 @@ string
 .box::after {
 	content: "Isso é uma string"
 }
+
+/*
+o que é o Box Model?
+
+cada elemento é representado como uma caixa retangular
+Essa caixa possui propriedades de uma caixa em 2 dimensões (largura x altura)
+
+propriedades da caixa
+
+tamanho (largura x altura) → width | height
+conteúdo → content
+bordas → border
+preenchimento interno → padding
+rspaços fora da caixa → margin
+*/
+
+.css-box{
+    width: 100px; 
+    height: 100px;
+    border: 1px solid red;
+    margin: 10%;
+    padding: 0 20px;
+    box-sizing: border-box; /*continuar com 100px*/
+    font-size: 16px;
+}
+
+/*
+block x inline
+
+block: <p><div><section><hradings><h1>... empurrra outras caixas para baixo
+inline: <a><strong><span><em> caixa fica uma do lado da outra (largura não respeitado)
+*/
+
+.block{
+    height: 100px;
+    width: 10px;
+    border: 1px solid red;
+    display: inline;
+    margin: 200px; /*somente valores horizontais funcionam*/
+}
+
+.inline{
+    height: 100px;
+    width: 10px;
+    border: 1px solid red;
+    display:block;
+    margin: 100px; 
+}
+
+/*
+margin: top right bottom left
+margin: top laterais bottom
+margin: cima e em baico laterais
+margin: único valor
+*/
+
+.margin, .elemento{
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    margin: 10px 20px;
+    /* display: inline;
+    margin: 0 2px; */
+    padding: 60px;
+    border: 100px solid darkred; 
+    box-sizing: border-box; /*continuar com 100px*/
+    border-top: dotted green 50px;
+    border-bottom: none;
+
+    outline:rgb(95, 33, 175) 25px solid;
+}
+
+.margin{
+    margin-bottom: 8px;
+}
+
+.elemento{
+    margin-top: 8px;
+}
+
+/*
+padding podera causar diferença na largura de um elemento
+*/
+
+/*
+border 
+
+shorthand:
+	border-top: solid 2px; /* top | right | bottom | left 
+style:
+	border: solid;
+width <length> | style:
+	border: 2px dotted;
+style | color:
+	border: outset #f33;
+width | style | color
+	border: medium dashed green;
+*/
