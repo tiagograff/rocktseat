@@ -249,3 +249,50 @@ style | color:
 width | style | color
 	border: medium dashed green;
 */
+
+.elemento2{
+    font-size: 20px;
+    color: blue;
+}
+
+.elemento2 p {
+    color: black;
+}
+
+/*background*/
+
+header{
+    height: 200px;
+    border: 7px dashed red;
+    background-color: aqua;
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/9969/production/_128437293_taylor-swift-lavender-haze-official-music-video-2-2-screenshot-e1674803542192-1536x802.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    background-origin:padding-box;
+    padding: 10px;
+    /* background-attachment: fixed; */
+    /* background: linear-gradient(red,violet); */
+    /*para ter mais um backfround precisa botar uma vírgula*/
+}
+
+main h1{
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    font-size: 32px;
+    color:black !important;
+    
+}
+
+main p{
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    font-size: 16px;
+    color:black !important;
+}
