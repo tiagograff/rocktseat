@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="" method="" id="meu-form">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="nome">nome completo</label>
+            <input id="nome"type="text" value="escreva aqui">
+
+            <input
+            type="text"
+            list="nomes"
+            placeholder="escolha um cantor"/>
+            <datalist id="nomes">
+                <option value="1">taylor</option>
+                <option value="2">lorde</option>
+                <option value="3">the weeknd</option>
+                <option value="4">lana</option>
+                <option value="5">frank ocean</option>
+                <option value="6">#ff0000</option>
+                <option value="7">#00ff00</option>
+            </datalist>
+            <input type="color" lis="nomes">
+            <button type="submit" name="buttom" value="valor qualquer" for="meu-form" autofocus>enviar</button>
+        </fieldset>
+    </form>
+
+    <form id="meu-form2" enctype="multipart/form-data">
+        <fieldset disabled>
+            <input type="text" name="nome" id="" autocomplete="additional-name">
+            <input type="date" name="data" id="" autofocus>
+            <label for="email">Email</label>_<!-- acessibilidade-->
+            <input type="email" name="email" id="" disable>
+            <input type="file" name="arquivo" id="" value="" readonly>
+            <input type="password" name="senha" id="" form="meu-form2" required placeholder="senha">
+        </fieldset>
+        <fieldset disabled>
+            <input type="password"
+            minlength="5"
+            maxlength="10"
+            size="10"
+            title=" coloque HEX no min 3 e no max 4 caracteres"
+            pattern="[0-9a-fA-F]{4,8}"
+            placeholder="senha"
+            required
+            inputmode="numeric"
+            autocomplete="on">
+        </fieldset>
+        <fieldset disabled>
+            <datalist id="emailList">
+                <option>111111@gmail.com</option>
+                <option>222222@gmail.com</option>
+            </datalist>
+            <input type="email"
+            multiple
+            pattern=".+@rocketseat\.com\.br"
+            list="emailList">
+        </fieldset>
+        <fieldset>
+            <input type="url"
+            spellcheck="false">
+        </fieldset>
+        <fieldset>
+            <input type="file" accept=".doc">
+            <button type="subimit">enviar</button>
+        </fieldset>
+        <fieldset>
+            <input type="color" value="#ff0000">
+        </fieldset>
+        <fieldset>
+            <label for="subscribe">receber notificação</label>
+            <input type="checkbox" name="interest" id="subscribe" checked>
+            <label for="outrp">outro</label>
+            <input type="checkbox" name="interest" id="outro">
+        </fieldset>
+        <fieldset>
+            <input type="hidden" value="id" name="8">
+        </fieldset>
+        <fieldset>
+            <label for="sim">sim</label>
+            <input type="radio" name="cafe" id="sim" value="yes">
+            <label for="não">não</label>
+            <input type="radio"name="cafe" id="nao" value="no">
+        </fieldset>
+        <fieldset>
+            <label for="message">mensagem</label>
+            <textarea id="message" name="message" rows="2" cols="30" wrap="on"></textarea>
+        </fieldset>
+        <fieldset>
+            <select name="selecione" id="selecionado" multiple size="1">
+                <option value="">selecione o modelo</option>
+                <option value="vermelho">red</option>
+                <option value="verde">green</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label name="pets" multiple size="8"> please choose one or more pets:
+                <select>
+                    <optgroup label=" 4-legged pets">
+                        <option value="dog">dog</option>
+                        <option value="cat">cat</option>
+                        <option value="hamster">hamster</option>
+                    </optgroup>
+                </select>
+                <select>
+                    <optgroup label="flying pats">
+                        <option value="parrot">parrot</option>
+                        <option value="macaw">macaw</option>
+                        <option value="albatross">albatross</option>
+                    </optgroup>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <!-- <datalist id="searchList">
+                <option value="linux">linux</option>
+                <option value="windows">windows</option>
+                <option value="mac">mac</option>
+            </datalist>
+            <input type="search" name="searchq" id="search" list="searchList"> -->
+            <label for="searchId">Pesquisar por ID</label>
+            <input type="search" name="q" list="searchList" id="searchId"
+            title="digite o numero do ID:99"
+            pattern="[0-9]">
+        </fieldset>
+        <fieldset>
+            <input type="number" min="2" max="8" step ="100" value="100">
+            <button>Pesquisar</button>
+        </fieldset>
+        <fieldset>
+            <input type="range" min="1" max="100" step="20">
+        </fieldset>
+        <fieldset>
+            <input type="date">
+        </fieldset>
+    </form>
+
+    <form id="meu-form3">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="nameId">Nome</label>
+            <br>
+            <input id="nameId" type="text" name="name" placeholder="nome completo">
+            <br>
+            <br>
+            <label for="emailId">Email</label>
+            <br>
+            <input id="emailId" type="email" name="email" placeholder="nome@gmail.com">
+            <br>
+            <br>
+            <label for="textareaId">Mensagem</label>
+            <br>
+            <textarea name="textarea" id="textareaId" cols="30" rows="10" placeholder="digite aqui sua mensagem"></textarea>
+            <br>
+            <br>
+            <button>Enviar</button>
+        </fieldset>
+
+    </form>
+</body>
+</html>
