@@ -7,6 +7,8 @@ let age = 30
 let stars = 200.32
 let isSubscribed = true
 
+
+//objeto
 let student = {
     name: 'mayk',
     age: 30,
@@ -14,6 +16,7 @@ let student = {
     isSubscribed: true
 };
 
+//concanetacao
 console.log(`${student.name} de idade ${student.age} pesa ${student.weight}`)
 
 let students = [
