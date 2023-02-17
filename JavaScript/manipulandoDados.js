@@ -68,13 +68,3 @@ techs.shift()
 console.log(techs.slice(1,3))
 //remover um ou mais itens em qualquer posição no array
 console.log(techs.splice(1,2))
-
-//manipulando arrays
-let techs2 = ["html", "css", "js"]
-//adcionar no começo
-console.log(techs2.push("nodejs"))
-//remover do fim
-//remover do começo
-//pegar somente alguns elementos do array
-//remover 1 ou mais items em qualquer posição do array
-//encontrar a posição de um elemento no array
