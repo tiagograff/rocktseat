@@ -23,7 +23,7 @@ switch(expression){
 
  function sayMyName(name = ''){
     if (name ===''){
-        throw new Error('nome é necessário')
+        throw new Error('nome é necessário') //acaba com a aplicação
     }
     console.log('depois do erro')
  }
