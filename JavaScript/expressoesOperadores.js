@@ -66,3 +66,23 @@ console.log(x)
 x += 1
 // x = x + 1
 console.log(x)
+
+let pao = true
+let queijo = true
+//and
+console.log(pao && queijo)
+// or
+console.log(pao || queijo)
+//not
+console.log(!queijo)
+
+//condição
+let pao1 = true
+let queijo1 = true
+const niceBreakFast = pao1 && queijo1 ? 'café top' : 'café ruim'
+console.log(niceBreakFast)
+
+//concatencação
+console.log('a'+'b')
+
+console.log(0 ? 'verdadeiro' : 'falso')
