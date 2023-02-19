@@ -1,0 +1,68 @@
+h1{
+    color:blue;
+}
+
+#title{
+    color: red
+}
+
+.content{
+    color: green;
+}
+
+[title]{
+    color:orange;
+}
+
+p:hover, h1{
+    color: gray;
+}
+
+.red{
+    color:red;
+}
+
+body article h2{
+    color:blue;
+}
+
+div > ul > li{
+    color: orange;
+}
+
+h1 + p{
+    color: rgb(12, 226, 12);
+}
+button + button{
+    margin-left: 32px;
+}
+
+p ~ p{
+    color: rgb(12, 226, 12);
+}
+
+ul li:first-child {
+    font-weight: bolder;
+}
+
+article p:nth-last-of-type(1) {
+    color: red
+}
+
+article h3:nth-child(1) {
+    color: green;
+}
+
+ul li:nth-child(odd){ /*  even */
+    color: gray;
+    background-color: darkgrey;
+}
+
+ul li:nth-child(odd):hover{ /*  even */
+    color: gray;
+    background-color: darkred;
+}
+
+ul li::before{
+    content: ">";
+}
