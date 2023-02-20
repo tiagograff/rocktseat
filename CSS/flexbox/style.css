@@ -1,0 +1,67 @@
+.esquerda{
+    float: left;
+}
+
+.direita{
+    float: right;
+}
+
+.normal{
+    clear: both;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itens:nth-child(1){
+    order: 1;
+}
+
+.container{
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    /* justify-content: flex-end;
+    height: 100vh; */
+    border: 1px solid red;
+    height: 30vh;
+}
+
+.itens2{
+    background-color: gray;
+    border: 1px solid;
+    flex: 1;
+}
+
+.container2{
+    display:flex;
+    /* flex-direction: row-reverse; */
+    flex-direction: column-reverse;
+    height: 20vh;
+}
+
+.box{
+    border: 1px dashed red;
+    display: flex;
+    flex-wrap:wrap; /*"novo eixo main"*/
+}
+
+.box div {
+    border: 1px solid;
+    width:80px
+}
+
+.box2{
+    display:flex;
+    flex-flow: row wrap;
+    border: 1px dashed red;
+
+    .box2 .itens4{
+        border: 1px solid;
+        width: 80px;
+    }
+}
