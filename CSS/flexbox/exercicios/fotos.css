@@ -1,0 +1,27 @@
+.colunas{
+    display: flex;
+    flex-direction: column;
+}
+
+.linhas{
+    display: flex;
+    margin: 1em;
+}
+
+.a01{
+    border: 1px solid;
+    padding: 3em;
+    margin: 1em;
+}
+
+.a02{
+    border: 1px solid;
+    padding: 3em;
+    margin: 1em;
+}
+
+.a03{
+    border: 1px solid;
+    padding: 3em;
+    margin: 1em;
+}
